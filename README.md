@@ -115,11 +115,10 @@ Run all scripts including AWS integration. Deploy QuickSight dashboard from `qui
 ## Business Impact
 
 Industry research and Snowflake customer outcomes:
-- **Vietnam renewable energy sector growing rapidly** — [GSO Vietnam](https://www.gso.gov.vn/)
-- **AI improves outcomes 15-30%** — [McKinsey](https://www.mckinsey.com/)
-- **Vietnam FDI strong in this sector** — [MPI](https://www.mpi.gov.vn/)
-- **Real-time analytics reduces response 60-80%** — [Gartner](https://www.gartner.com/)
-
+- **Vietnam has 5.2GW installed wind capacity with 21GW offshore wind potential in southern waters** — [GWEC Global Wind Report](https://gwec.net/global-wind-report-2024/)
+- **PDP8 targets 6GW offshore wind by 2030 — $30B+ investment pipeline attracting Orsted, Equinor, and Mainstream** — [MOIT Vietnam PDP8](https://moit.gov.vn/en/news/energy-policy/pdp8-approved.html)
+- **Vietnam's offshore wind capacity factor is 45-55% — among highest in Asia due to strong monsoon winds** — [World Bank ESMAP](https://www.worldbank.org/en/topic/energy/publication/offshore-wind-development-program)
+- **Orsted manages 15GW of offshore wind assets globally using real-time data analytics platforms** — [Orsted Annual Report](https://orsted.com/en/investors/ir-material/annual-report-2024)
 
 ## Key Demo Numbers
 
