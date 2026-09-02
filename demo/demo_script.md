@@ -21,8 +21,8 @@ Snowflake delivers wind power optimization intelligence for Vietnamese renewable
 | Database | `VIETNAM_RENEWABLE_WIND` |
 | Service | `VIETNAM_RENEWABLE_WIND_APP` |
 | Compute pool | `SEA_DEMOS_VIETNAM_POOL` |
-| Dimension table | `RAW.DOCUMENTS` (20 rows) |
-| Fact table | `RAW.METRICS` (250,000 rows, 90 days) |
+| Dimension table | `RAW.WIND_FARMS` (20 rows) |
+| Fact table | `RAW.TURBINE_READINGS` (250,000 rows, 90 days) |
 | Curated layer | `CURATED.PERFORMANCE_SUMMARY`, `CURATED.TREND_ANALYSIS`, `CURATED.KPI_SUMMARY` |
 | Currency | VND (₫) |
 
@@ -44,11 +44,11 @@ original literal as a fallback, so it still renders if Snowflake is unreachable.
 |---|---|---|
 | Wind Generation | `1.2 TWh` | average per event |
 | Availability | `96.8%` | average per event |
-| Capacity Factor | `32%` | total across Documents |
-| Turbines Active | `247` | total across Documents |
+| Capacity Factor | `32%` | total across Wind Farms |
+| Turbines Active | `247` | total across Wind Farms |
 | Avg Wind Speed | `7.2 m/s` | average per event |
-| Wake Loss | `8%` | total across Documents |
-| Pitch Faults (MTD) | `4` | total across Documents |
+| Wake Loss | `8%` | total across Wind Farms |
+| Pitch Faults (MTD) | `4` | total across Wind Farms |
 
 
 ## Demo flow
