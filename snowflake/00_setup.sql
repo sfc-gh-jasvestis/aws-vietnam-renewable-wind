@@ -1,16 +1,13 @@
--- ============================================================================
--- Wind Power Forecasting
--- Wind Power Forecasting for Vietnam - ML.FORECAST and Dynamic Tables power real-time wind power optimization intelligence for renewable energy in Bac Lieu & Tra Vinh.
--- ============================================================================
-USE ROLE ACCOUNTADMIN;
-CREATE DATABASE IF NOT EXISTS WIND_ANALYTICS;
-CREATE WAREHOUSE IF NOT EXISTS WIND_WH WAREHOUSE_SIZE = 'MEDIUM' AUTO_SUSPEND = 120 AUTO_RESUME = TRUE;
-USE DATABASE WIND_ANALYTICS;
-CREATE SCHEMA IF NOT EXISTS RAW;
-CREATE SCHEMA IF NOT EXISTS CURATED;
-CREATE SCHEMA IF NOT EXISTS ML;
-CREATE SCHEMA IF NOT EXISTS AI;
-CREATE SCHEMA IF NOT EXISTS SEARCH;
-CREATE SCHEMA IF NOT EXISTS APP;
+-- Generated from generator/demo_specs/aws-vietnam-renewable-wind.json
+-- Regenerate with: python3 generator/gen_repo_docs.py aws-vietnam-renewable-wind
+-- This is the schema that is actually deployed for VIETNAM_RENEWABLE_WIND.
 
-USE WAREHOUSE WIND_WH;
+-- VIETNAM_RENEWABLE_WIND  (Wind Power Forecasting)
+-- generated from generator/demo_specs/aws-vietnam-renewable-wind.json - do not hand-edit
+CREATE DATABASE IF NOT EXISTS VIETNAM_RENEWABLE_WIND;
+CREATE SCHEMA IF NOT EXISTS VIETNAM_RENEWABLE_WIND.RAW;
+CREATE SCHEMA IF NOT EXISTS VIETNAM_RENEWABLE_WIND.CURATED;
+CREATE SCHEMA IF NOT EXISTS VIETNAM_RENEWABLE_WIND.APP;
+USE DATABASE VIETNAM_RENEWABLE_WIND;
+
+-- 5 real regions; entity names carry their region so the two always agree
