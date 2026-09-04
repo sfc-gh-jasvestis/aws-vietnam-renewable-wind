@@ -53,6 +53,7 @@ export default function HomePage() {
         <div className="lg:col-span-1">
           <GeoMap
             country="vietnam"
+            labels={{ entity: 'Farms', event: 'Turbine Readings', alert: 'Faults' }}
             regions={data?.regions}
             markers={[{"label": "Bac Lieu", "value": "Offshore: 99MW", "color": "green", "size": "lg"}, {"label": "Gia Lai", "value": "Onshore: 240MW", "color": "green", "size": "lg"}, {"label": "Ninh Thuan", "value": "Onshore: 180MW", "color": "amber", "size": "md"}, {"label": "Quang Ninh", "value": "Offshore planned", "color": "purple", "size": "sm"}]}
             routes={[]}
@@ -83,8 +84,13 @@ export default function HomePage() {
         columns={[
           { key: 'id', header: '#' },
           { key: 'name', header: 'Farm' },
+          { key: 'region', header: 'Region' },
           { key: 'status', header: 'Status' },
-          { key: 'value', header: 'CF %' },
+          { key: 'm1', header: 'CF %' },
+          { key: 'm2', header: 'Availability' },
+          { key: 'm3', header: 'Wind Speed' },
+          { key: 'events', header: 'Turbine Readings' },
+          { key: 'alerts', header: 'Faults' },
         ]}
         data={data?.entities || []}
         title="Wind Farm Status"
