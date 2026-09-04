@@ -53,6 +53,7 @@ export default function HomePage() {
         <div className="lg:col-span-1">
           <GeoMap
             country="vietnam"
+            regions={data?.regions}
             markers={[{"label": "Bac Lieu", "value": "Offshore: 99MW", "color": "green", "size": "lg"}, {"label": "Gia Lai", "value": "Onshore: 240MW", "color": "green", "size": "lg"}, {"label": "Ninh Thuan", "value": "Onshore: 180MW", "color": "amber", "size": "md"}, {"label": "Quang Ninh", "value": "Offshore planned", "color": "purple", "size": "sm"}]}
             routes={[]}
             title="Geographic Overview"
